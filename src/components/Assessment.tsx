@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 export default function Assessment() {
-  const [answers, setAnswers] = useState({});
+  const [answers, setAnswers] = useState<{ [key: number]: string }>({});
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
