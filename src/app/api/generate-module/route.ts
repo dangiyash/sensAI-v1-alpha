@@ -89,7 +89,7 @@ export async function POST(req: Request) {
       console.error("Error parsing module data:", parseError);
       console.error("Raw response that failed to parse:", text);
       console.error("Cleaned text that failed to parse:", cleanedText);
-      throw new Error(`Invalid module data format: ${parseError.message}`);
+      throw new Error(`Invalid module data format: ${parseError instanceof Error ? parseError.message : 'Unknown error'}`);
     }
   } catch (error) {
     console.error("Error in generate-module API:", error);
