@@ -39,17 +39,10 @@ PadhAI transforms boring learning into a quest for self-mastery.
 
 ```mermaid
 flowchart TD
-  A[User (Browser Interaction)]
-  B[Frontend (React.js, Zustand, TailwindCSS)]
-  C[Backend (Next.js, NestJS, Prisma)]
-  D[Database (MongoDB Atlas)]
-  E[AI Processing (Gemini API + LangChain)]
-  F[Dynamic Skill Assessment Engine]
-  G[GuruAI Chatbot]
-
-  A --> B
-  B --> C
-  C --> D
-  C --> E
-  E --> F
-  F --> G
+  A[User (Browser Interaction)] --> B[Frontend (React.js, Zustand, TailwindCSS)]
+  B --> C[Backend (Next.js, NestJS, Prisma)]
+  C --> D[Database (MongoDB Atlas)]
+  C --> E[AI Processing (Gemini API + LangChain)]
+  E --> F[Dynamic Skill Assessment Engine]
+  F --> G[GuruAI Chatbot]
+```
