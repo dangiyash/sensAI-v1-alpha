@@ -42,7 +42,7 @@ export default function LanguagesPage() {
     }
 
     setGeneratingConcepts(true);
-    setError(null);
+    const [error, setError] = useState<string | null>(null);
 
     try {
       const response = await fetch("/api/generate-concepts", {
