@@ -48,6 +48,49 @@ export async function GET(request: Request) {
 
   // Default questions for built-in languages
   
+  const questions = {
+  javascript: [
+    {
+      id: "js-1",
+      question: "What is a closure in JavaScript?",
+      options: [
+        "A function having access to its parent scope",
+        "A function that runs immediately",
+        "An object method",
+        "None of the above"
+      ],
+      concept: "Closure",
+      difficulty: "Intermediate"
+    },
+    {
+      id: "js-2",
+      question: "What is the difference between '==' and '==='?",
+      options: [
+        "'==' checks value and type, '===' checks only value",
+        "'===' checks value and type, '==' checks only value",
+        "No difference",
+        "None of the above"
+      ],
+      concept: "Comparison Operators",
+      difficulty: "Basic"
+    }
+  ],
+  python: [
+    {
+      id: "py-1",
+      question: "What is a Python list comprehension?",
+      options: [
+        "A way to create lists using a for loop in one line",
+        "A syntax error",
+        "A special type of function",
+        "None of the above"
+      ],
+      concept: "List Comprehensions",
+      difficulty: "Intermediate"
+    }
+  ]
+  // You can add more languages and questions here
+};
 
   const languageQuestions = questions[language.toLowerCase() as keyof typeof questions];
 
