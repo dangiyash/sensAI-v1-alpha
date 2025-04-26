@@ -47,56 +47,7 @@ export async function GET(request: Request) {
   }
 
   // Default questions for built-in languages
-  const questions = {
-    python: [
-      {
-        id: "py1",
-        question: "What is your experience with Python list comprehensions?",
-        options: [
-          "Never used them",
-          "Basic understanding",
-          "Used occasionally",
-          "Use regularly",
-          "Advanced usage"
-        ],
-        concept: "List Comprehensions",
-        difficulty: "intermediate"
-      },
-      // ... other Python questions
-    ],
-    cpp: [
-      {
-        id: "cpp1",
-        question: "How comfortable are you with C++ pointers?",
-        options: [
-          "Not familiar",
-          "Basic understanding",
-          "Comfortable with basics",
-          "Good understanding",
-          "Expert level"
-        ],
-        concept: "Pointers",
-        difficulty: "intermediate"
-      },
-      // ... other C++ questions
-    ],
-    c: [
-      {
-        id: "c1",
-        question: "How well do you understand memory management in C?",
-        options: [
-          "No experience",
-          "Basic knowledge",
-          "Intermediate understanding",
-          "Advanced knowledge",
-          "Expert level"
-        ],
-        concept: "Memory Management",
-        difficulty: "advanced"
-      },
-      // ... other C questions
-    }
-  };
+  
 
   const languageQuestions = questions[language.toLowerCase() as keyof typeof questions];
 
