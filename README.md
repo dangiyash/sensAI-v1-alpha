@@ -1,4 +1,4 @@
-# PadhAI - Personalized Aptitude Development Helper
+# PadhAI - Personalized Aptitude Development Helper AI
 
 An AI-Powered Self-Learning Assessment Platform built to revolutionize how users learn, assess themselves, and grow in the digital era.
 
