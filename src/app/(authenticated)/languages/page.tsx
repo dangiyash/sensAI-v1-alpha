@@ -17,10 +17,10 @@ export default function LanguagesPage() {
     description: "",
     concepts: ""
   });
-  const [error, setError] = useState("");
+  
   const [customTopics, setCustomTopics] = useState<any[]>([]);
   const [generatingConcepts, setGeneratingConcepts] = useState(false);
-
+  const [error, setError] = useState<string | null>(null);
   // Load custom topics from localStorage on component mount
   useEffect(() => {
     const storedTopics = localStorage.getItem("customTopics");
@@ -42,7 +42,7 @@ export default function LanguagesPage() {
     }
 
     setGeneratingConcepts(true);
-    const [error, setError] = useState<string | null>(null);
+    setError(null);
 
     try {
       const response = await fetch("/api/generate-concepts", {
