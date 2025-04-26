@@ -1,9 +1,13 @@
+
 import { IBM_Plex_Mono } from "next/font/google";
 import { usePathname } from "next/navigation";
-import { useSession } from "next-auth/react";
+import { useSession, signOut } from "next-auth/react";
+import Link from "next/link";
 import "./globals.css";
 import Providers from "./providers";
 import GlobalChat from "@/components/GlobalChat";
+
+// ... existing code ...
 
 const ibmPlexMono = IBM_Plex_Mono({ 
   subsets: ["latin"],
