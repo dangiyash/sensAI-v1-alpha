@@ -1,4 +1,5 @@
 import { IBM_Plex_Mono } from "next/font/google";
+import { usePathname } from "next/navigation";
 import "./globals.css";
 import Providers from "./providers";
 import GlobalChat from "@/components/GlobalChat";
