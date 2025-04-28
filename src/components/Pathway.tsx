@@ -1,8 +1,8 @@
 "use client";
 import { useSession, signIn, signOut } from "next-auth/react";
 import { useState } from "react";
-// import QueryForm from "@/components/QueryForm";
-// import PythonAssessment from "@/components/PythonAssesment";
+import QueryForm from "@/components/QueryForm";
+ import PythonAssessment from "@/components/PythonAssesment";
 
 export default function Dashboard() {
   const { data: session } = useSession();
