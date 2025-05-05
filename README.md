@@ -5,7 +5,8 @@ An AI-Powered Self-Learning Assessment Platform built to revolutionize how users
 ---
 
 ## 🚀 About The Project
-Deployments: [padh-ai-theta](https://padh-ai-theta.vercel.app)  [padh-ai-v1](https://padh-ai-v1.vercel.app)
+Deployments: [padh-ai-theta](https://padh-ai-theta.vercel.app) & [padh-ai-v1](https://padh-ai-v1.vercel.app)
+
 In today’s world of digital overload and shrinking attention spans, traditional education methods fail to keep learners engaged.  
 PadhAI solves this by delivering personalized learning roadmaps, real-time skill gap analysis, and an AI mentor chatbot — all gamified to boost motivation.
 
