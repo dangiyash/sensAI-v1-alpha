@@ -72,7 +72,7 @@ export default function AuthenticatedLayout({ children }: { children: React.Reac
                 <div className="flex items-center space-x-2">
                   <div className="flex items-center">
                     <span className="text-3xl font-semibold tracking-tighter text-gray-950 dark:text-gray-700">
-                      Padh
+                      Sens
                     </span>
                     <span className="text-3xl font-bold text-blue-900 dark:text-blue-300">
                       AI
