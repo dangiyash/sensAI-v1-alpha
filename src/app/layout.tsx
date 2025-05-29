@@ -16,7 +16,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata = {
-  title: "PadhAI - Personalized Learning Platform",
+  title: "SensAI - Personalized Learning Platform",
   description: "Learn programming languages with AI-powered personalized learning paths",
 };
 
